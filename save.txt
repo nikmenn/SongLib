@@ -1,0 +1,16 @@
+song1
+artist1A
+album1
+year1
+song1
+artist1B
+album1
+
+song2
+artist2
+
+
+zz
+aaa
+bbb
+2000

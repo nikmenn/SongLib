@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="670.0" prefWidth="549.0" 
+	xmlns="http://javafx.com/javafx/8.0.40" 
+	xmlns:fx="http://javafx.com/fxml/1" 
+	fx:controller="view.Controller"> 
+	
+   <children>
+      <ListView fx:id="listView" onMouseClicked="#showDetails" layoutX="14.0" layoutY="45.0" prefHeight="200.0" prefWidth="307.0" />
+      
+      <Button fx:id="addButton" onAction="#add" layoutX="14.0" layoutY="380.0" mnemonicParsing="false" text="Add" />
+      <Button fx:id="editButton" onAction="#edit" layoutX="81.0" layoutY="380.0" mnemonicParsing="false" text="Edit" />
+      <Button fx:id="deleteButton" onAction="#delete" layoutX="269.0" layoutY="260.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="cancelButton" onAction="#cancel" layoutX="268.0" layoutY="293.0" mnemonicParsing="false" text="Cancel" />
+      
+      <TextField fx:id="titleField" layoutX="14.0" layoutY="260.0" prefHeight="27.0" prefWidth="109.0" promptText="Song Title" />
+      <TextField fx:id="artistField" layoutX="14.0" layoutY="290.0" prefHeight="27.0" prefWidth="109.0" promptText="Artist" />
+      <TextField fx:id="albumField" layoutX="14.0" layoutY="320.0" prefHeight="27.0" prefWidth="109.0" promptText="Album" />
+      <TextField fx:id="yearField" layoutX="14.0" layoutY="350.0" prefHeight="27.0" prefWidth="109.0" promptText="Year" />
+      
+      <TextArea fx:id="songDetailsText" promptText="Song details" layoutX="330.0" layoutY="45.0" prefHeight="200.0" prefWidth="307.0" />
+   </children>
+   
+</AnchorPane>
